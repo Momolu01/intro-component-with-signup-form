@@ -1,3 +1,64 @@
 @import './helpers.css';
 @import './reset.css';
 
+body {
+  width: 100vw;
+  height: 100vh;
+
+  background: url('./../images/bg-intro-desktop.png');
+  background-color: hsl(0, 100%, 74%);
+  background-size: cover;
+}
+main {
+  max-width: 1130px;
+  width: 90%;
+  max-height: 700px;
+  height: 100%;
+
+  margin: auto;
+  padding-top: 8.5%;
+
+  display: flex;
+  flex: column wrap;
+  justify-content: space-between;
+}
+main>section {
+  width: 47.5%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .text-field {
+  height: auto;
+
+  color: white;
+}
+main .form-field>.title{
+  height: 10%;
+
+  margin: 0 ;
+
+  background-color: hsl(248, 32%, 49%);
+}
+main .form-field h2{
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+
+  box-shadow: 0 15px gray;
+}
+main .form-field #form{
+  height: 85%;
+
+  background-color: white;
+
+}
+main .form-field>#form input{
+  /* box-sizing: content-box; */
+  
+  width: 90%;
+
+  margin: 5%;
+}
